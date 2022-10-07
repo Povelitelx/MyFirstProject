@@ -81,6 +81,7 @@ body {
   font-family: 'Futura-Normal', arial;
   background-color: rgb(255, 250, 240);
 
+
   .header {
     margin-bottom: 40px;
     background-color: rgba(255, 235, 205, 0.99);
@@ -147,7 +148,7 @@ body {
 
         }
 
-        & div:nth-child(1) {
+        & div:nth-child(2) {
           & a {
             border-bottom: 2px solid saddlebrown;
             text-shadow: 1px 2px 3px #666;
@@ -254,6 +255,7 @@ body {
               line-height: 35px;
               text-align: center;
               margin-bottom: 15px;
+              color: #480607;
             }
 
             & p:nth-child(2) {
@@ -556,12 +558,16 @@ body {
 
             .main_info_wrapper_about {
               margin: 30px 0;
+              background: #000;
+
 
               & p:nth-child(1) {
-                font-size: 18px;
+                font-size: 19px;
                 line-height: 35px;
                 text-align: center;
                 margin-bottom: 15px;
+                //font-weight: bold;
+                //color: #6A5ACD;
               }
 
               & p:nth-child(2) {
@@ -609,11 +615,26 @@ body {
           border-radius: 40px;
           border: 1.5px solid #6A5ACD;
           padding: 15px;
-          background-color: rgba(255, 235, 205, 0.4);
+          background-color: rgba(255, 235, 205,0.99);
           -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
           -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
           box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+          position: relative;
+          z-index: 2;
 
+          &:after {
+            content: "";
+            background: url('/img/1626298360_12-funart-pro-p-siba-inu-shchenki-zhivotnie-krasivo-foto-13.jpg');
+            background-position: center;
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            border-radius: 40px;
+          }
 
           .main_info_every_text {
             display: flex;
@@ -623,7 +644,7 @@ body {
 
 
             & p {
-              font-size: 16px;
+              font-size: 20px;
               text-align: justify-all;
               display: block;
               margin: 20px 40px;
@@ -653,6 +674,7 @@ body {
           }
 
           .main_info_every_img {
+            display: none;
 
             & img {
               border-radius: 20px;
@@ -1524,25 +1546,6 @@ body {
           border-radius: 40px;
           border: 1.5px solid #6A5ACD;
           padding: 10px;
-          background-color: rgba(255, 235, 205, 0.4);
-          -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-          -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-          box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-          position: relative;
-          z-index: 2;
-
-          &:after {
-            content: "";
-            background: url('/img/yaponskiy-siba-inu-malchik-768x384.jpg');
-            opacity: 0.4;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            position: absolute;
-            z-index: -1;
-            border-radius: 40px;
-          }
 
 
           .main_info_every_text {
@@ -1846,25 +1849,6 @@ body {
           border-radius: 40px;
           border: 1.5px solid #6A5ACD;
           padding: 10px;
-          background-color: rgba(255, 235, 205, 0.4);
-          -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-          -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-          box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-          position: relative;
-          z-index: 2;
-
-          &:after {
-            content: "";
-            background: url('/img/yaponskiy-siba-inu-malchik-768x384.jpg');
-            opacity: 0.4;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            position: absolute;
-            z-index: -1;
-            border-radius: 40px;
-          }
 
 
           .main_info_every_text {
@@ -2010,4 +1994,3 @@ body {
     }
   }
 }
-
