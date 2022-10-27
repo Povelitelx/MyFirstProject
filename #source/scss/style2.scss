@@ -226,7 +226,47 @@ body {
       }
     }
   }
+  .burger_icon{
+    display: none;
+  }
+  .burger_nav {
 
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    transition: 20s;
+    background: rgba(255, 235, 205, 0.99);
+    display: none;
+
+
+    .burger_nav_wrapper {
+
+      .burger_nav_main {
+        & div {
+          padding: 3px;
+          margin: 3px;
+          font-size: 18px;
+
+          & a {
+            color: #480607;
+          }
+        }
+      }
+
+      .burger_nav_icon {
+        display: flex;
+
+        & i {
+          padding: 3px;
+          margin: 3px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
   .main {
 
     .main_wrapper {
@@ -558,7 +598,7 @@ body {
 
             .main_info_wrapper_about {
               margin: 30px 0;
-          
+
 
 
               & p:nth-child(1) {
@@ -1695,7 +1735,7 @@ body {
 @media (max-width: 635px) {
   body {
     .header {
-      margin-bottom: 25px;
+      //margin-bottom: 25px;
       background-color: rgba(255, 235, 205, 0.99);
       -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
       -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
@@ -1707,7 +1747,7 @@ body {
         align-items: center;
         width: 90%;
         margin: 0 auto;
-        justify-content: center;
+        justify-content: space-between;
 
 
         .logo {
@@ -1768,10 +1808,53 @@ body {
             }
           }
         }
+
+        .burger_icon {
+          display: block;
+        }
       }
     }
+    .open{
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      z-index: 200;
+      display: block;
+      transition: 20s;
+      background: rgba(255, 235, 205, 0.99);
 
+
+
+
+      .burger_nav_wrapper {
+
+        .burger_nav_main {
+          & div {
+            padding: 3px;
+            margin: 3px;
+            font-size: 17px;
+
+            & a {
+              color: #480607;
+            }
+          }
+        }
+
+        .burger_nav_icon {
+          display: flex;
+
+          & i {
+            padding: 3px;
+            margin: 3px;
+            font-size: 18px;
+            color: #6A5ACD;
+          }
+        }
+      }
+    }
     .main {
+      margin-top: 80px;
 
       .main_wrapper {
         width: 95%;
@@ -1849,6 +1932,25 @@ body {
           border-radius: 40px;
           border: 1.5px solid #6A5ACD;
           padding: 10px;
+          background-color: rgba(255, 235, 205, 0.4);
+          -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+          -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+          box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+          position: relative;
+          z-index: 2;
+
+          &:after {
+            content: "";
+            background: url('/img/yaponskiy-siba-inu-malchik-768x384.jpg');
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            border-radius: 40px;
+          }
 
 
           .main_info_every_text {

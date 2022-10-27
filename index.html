@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://allfont.ru/allfont.css?fonts=futura-normal" rel="stylesheet" type="text/css"/>
-    <link href="https://allfont.ru/allfont.css?fonts=bebas" rel="stylesheet" type="text/css"/>
+    <!--    <link href="https://allfont.ru/allfont.css?fonts=futura-normal" rel="stylesheet" type="text/css"/>-->
+    <!--    <link href="https://allfont.ru/allfont.css?fonts=bebas" rel="stylesheet" type="text/css"/>-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">-->
 </head>
 <body>
 
-<div class="header">
+<div id="#" class="header">
     <div class="header_wrapper">
         <div class="logo">
             <div>
@@ -51,9 +52,13 @@
                 <a href=""> <i class="fa-brands fa-telegram"></i></a>
             </div>
         </div>
+        <div class="burger_icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
 </div>
 
+<div id="bur_wrapper" class="burger_nav_container"></div>
 <div class="main">
     <div class="main_wrapper">
         <h1>Impeccable</h1>
@@ -68,33 +73,60 @@
                         Мы рады приветствовать вас на нашем сайте!</p>
                 </div>
                 <div class="main_info_wrapper_photo">
-                    <div>
-                        <img src="img/shiba_main.jpg" alt="">
+                    <div class="main_info_wrapper_photo_siba">
+                        <img class="siba_modal" src="img/shiba_main.jpg" alt="">
                         <p>Сиба-Ину</p>
                     </div>
                     <div>
-                        <img src="img/akita_main.jpg" alt="">
+                        <img class="akita_modal" src="img/akita_main.jpg" alt="">
                         <p>Акита-Ину</p>
                     </div>
                     <div>
-                        <img src="img/bulli_main2.webp" alt="">
+                        <img class="bulli_modal" src="img/bulli_main2.webp" alt="">
                         <p>Американский Булли</p>
                     </div>
 
                 </div>
             </div>
         </div>
+        <!--        <div class="emodal">-->
+        <!--            <div class="dogs_modal">-->
+
+        <!--                <div class="dogs_modal_wrapper">-->
+        <!--                    <div class="dogs_img">-->
+        <!--                        <i class="fa-solid fa-xmark"></i>-->
+        <!--                        <img class="siba_modal" src="img/siba_absolut.jpg" alt="">-->
+        <!--                    </div>-->
+        <!--                    <div class="dogs_p">-->
+        <!--                        <p>Сиба — преданная, бдительная и внимательная собака, в поведении которой чередуются периоды-->
+        <!--                            спокойствия и повышенной активности. Они независимы, но тем не менее из них получаются-->
+        <!--                            хорошие семейные собаки.</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <div class="emodal"></div>
 
         <div class="main_info_every">
             <div class="main_info_every_text">
-                <p>Сиба-Ину — cамая маленькая собака из японских пород. Храбрая, величественная, с большой внутренней
+                <p class="main_info_text_JS">Сиба-Ину — cамая маленькая собака из японских пород. Храбрая,
+                    величественная, с большой внутренней
                     силой в сочетании с непоколебимой лояльностью и доверием к владельцу. Это очаровательная собака с
                     плюшевой шерстью и своенравным характером. Быть хозяином такого питомца непросто, но если вы
                     завоюете его уважение и доверие, то получите массу удовольствия от общения с умным и любознательным
                     другом.</p>
-                <button>
-                    <a href="">Следующая</a>
+                <button class="next_but">
+                    Cледующая
                 </button>
+                <div class="circle">
+
+                        <i class="fa-solid fa-circle fa-circle_one"></i>
+                        <i class="fa-solid fa-circle fa-circle_two"></i>
+                        <i class="fa-solid fa-circle fa-circle_three"></i>
+
+                </div>
             </div>
             <div class="main_info_every_img">
                 <img src="img/siba-inu-5_right.jpg" alt="">
@@ -195,6 +227,10 @@
     </div>
 </div>
 </div>
+<script src="js/base.js"></script>
+<script src="js/new.js"></script>
+<script src="js/index.js"></script>
 <script src="https://kit.fontawesome.com/45cc847fa0.js" crossorigin="anonymous"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>-->
 </body>
 </html>
